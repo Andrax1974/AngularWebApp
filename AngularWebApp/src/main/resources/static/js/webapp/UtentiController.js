@@ -3,16 +3,14 @@
 /* Controllers */
 
 angular.module('app')
-	.controller('UtentiController', ['$log', 
-	  function ($log) {
-		  
-		  var self= this;
-		  
+	.controller('UtentiController', ['$scope','$log', 
+	  function ($scope,$log) {
+		   
 		  var startAction = function () {
 			  
 			  $log.log('Avvio UtentiController ');
 			  
-			  self.PageTitle = 'Gestione Utenti'
+			  $scope.PageTitle =  'Gestione Utenti'
 			  
 		  }
 		  

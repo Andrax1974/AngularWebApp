@@ -3,16 +3,14 @@
 /* Controllers */
 
 angular.module('app')
-	.controller('AppController', ['$log', 
+	.controller('AppController', ['$scope','$log', 
 	  function ($log) {
-		  
-		  var self= this;
-		  
+		    
 		  var startAction = function () {
 			  
 			  $log.log('Avvio AppController ');
 			  
-			  self.PageTitle = 'Gestione App Clienti'
+			  $scope.PageTitle = 'Gestione App Clienti'
 			  
 		  }
 		  

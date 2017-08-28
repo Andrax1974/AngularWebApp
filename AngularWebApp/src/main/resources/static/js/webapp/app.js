@@ -29,8 +29,10 @@ MyApp.config(function($routeProvider) {
 		controller : 'UtentiController'
 	});
 	
+	/*
 	$routeProvider.otherwise({
 		redirectTo : '/index'
 	});
+	*/
 	
 });

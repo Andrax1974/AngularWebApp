@@ -3,16 +3,14 @@
 /* Controllers */
 
 angular.module('app')
-	.controller('ProdottiController', ['$log', 
-	  function ($log) {
-		  
-		  var self= this;
+	.controller('ProdottiController', ['$scope','$log', 
+	  function ($scope,$log) {
 		  
 		  var startAction = function () {
 			  
-			  $log.log('Avvio ProdottiController ');
+			  $log.log('Avvio ProdottiController');
 			  
-			  self.PageTitle = 'Anagrafica Prodotti'
+			  $scope.PageTitle = 'Anagrafica Prodotti'
 			  
 		  }
 		  

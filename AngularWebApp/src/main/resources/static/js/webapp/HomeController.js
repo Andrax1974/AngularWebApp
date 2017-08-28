@@ -10,7 +10,7 @@ angular.module('app')
 			  
 			  $log.log('Avvio HomeController');
 			  
-			  $scope.appTitle = "Home Page";
+			  $scope.PageTitle = "Home Page";
 			  
 		  }
 		  
