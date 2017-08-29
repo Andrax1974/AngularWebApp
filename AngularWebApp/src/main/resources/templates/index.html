@@ -11,7 +11,7 @@
 	<link rel="stylesheet" th:href="@{/static/css/webapp/app.css}" ></link>
 	
 </head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="HomeController">
 	<!-- BARRA DI NAVIGAZIONE -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 	
@@ -43,14 +43,14 @@
 						</a>
 					</li>
 					<li>
-						<a th:href="@{#}"> 
-							<span class="badge">5</span> 
+						<a th:href="@{#!/notifiche}"> 
+							<span class="badge">{{QtaNotif}}</span> 
 							<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp;Notifiche
 						</a>
 					</li>
 					<li>
 						<a th:href="@{#}" role="button" data-toggle="modal" data-target="#messages-modal"> 
-							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Promo
+							<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>&nbsp;Promo
 						</a>
 					</li>
 				</ul>
@@ -91,12 +91,14 @@
 	<script type="text/javascript" th:src="@{/static/js/bootstrap.min.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/angular.min.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/angular-route.js}"></script>
+	<script type="text/javascript" th:src="@{/static/js/main.js}"></script>
 	
 	<script type="text/javascript" th:src="@{/static/js/webapp/app.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/webapp/HomeController.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/webapp/ProdottiController.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/webapp/AppController.js}"></script>
 	<script type="text/javascript" th:src="@{/static/js/webapp/UtentiController.js}"></script>
+	<script type="text/javascript" th:src="@{/static/js/webapp/NotifController.js}"></script>
 		
 </body>
 </html>

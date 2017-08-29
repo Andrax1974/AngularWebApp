@@ -5,8 +5,8 @@ var MyApp = angular.module('app', ['ngRoute'])
 MyApp.config(function($routeProvider) {
 	
 	$routeProvider.when('/index', {
-		templateUrl : '/items/index',
-		controller : 'HomeController'
+		templateUrl : '/items/index'
+		//,controller : 'HomeController'
 	});
 	
 	$routeProvider.when('/prodotti', {
@@ -29,10 +29,12 @@ MyApp.config(function($routeProvider) {
 		controller : 'UtentiController'
 	});
 	
-	/*
+	
 	$routeProvider.otherwise({
 		redirectTo : '/index'
 	});
-	*/
+	
 	
 });
+
+

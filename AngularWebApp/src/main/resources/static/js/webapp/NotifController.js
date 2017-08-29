@@ -3,16 +3,14 @@
 /* Controllers */
 
 angular.module('app')
-	.controller('HomeController', ['$scope','$log', 
+	.controller('NotifController', ['$scope','$log', 
 	  function ($scope,$log) {
 		  
 		  var startAction = function () {
 			  
-			  $log.log('Avvio HomeController');
+			  $log.log('Avvio NotifController');
 			  
-			  $scope.PageTitle = "Home Page";
-			  
-			  $scope.QtaNotif = "8";
+			  $scope.PageTitle = 'Gestione Notifiche'
 			  
 		  }
 		  

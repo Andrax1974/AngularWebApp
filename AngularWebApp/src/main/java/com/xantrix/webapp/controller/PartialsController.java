@@ -8,25 +8,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PartialsController
 {
 	@RequestMapping(value = "/index")
-	public String getStartTemplate()
+	public String getIndexTemplate()
 	{
 		return "partials/home";
 	}
 	
 	@RequestMapping(value = "/prodotti")
-	public String getWorkOutTemplate()
+	public String getProdottiTemplate()
 	{
 		return "partials/prodotti";
 	}
 	
 	@RequestMapping(value = "/app")
-	public String getFinishTemplate()
+	public String getAppTemplate()
 	{
 		return "partials/app";
 	}
 	
+	@RequestMapping(value = "/notifiche")
+	public String getNotificheTemplate()
+	{
+		return "partials/notifiche";
+	}
+	
 	@RequestMapping(value = "/utente")
-	public String getDescriptionPane()
+	public String getUtenteTemplate()
 	{
 		return "partials/utenti";
 	}

@@ -1,23 +1,23 @@
 'use strict';
 
-/* Controllers */
+/* AppController */
 
 angular.module('app')
-	.controller('AppController', ['$scope','$log', 
-	  function ($log) {
-		    
-		  var startAction = function () {
-			  
-			  $log.log('Avvio AppController ');
-			  
-			  $scope.PageTitle = 'Gestione App Clienti'
-			  
-		  }
+.controller('AppController', ['$scope','$log', 
+  function ($scope,$log) {
+	  
+	  var startAction = function () {
 		  
-		  var init = function () {
-	          startAction();
-	      };
+		  $log.log('Avvio AppController');
+		  
+		  $scope.PageTitle = 'Gestione App Clienti'
+		  
+	  }
+	  
+	  var init = function () {
+          startAction();
+      };
 
-	      init();
-		  
-	  }]);
+      init();
+	  
+  }]);
