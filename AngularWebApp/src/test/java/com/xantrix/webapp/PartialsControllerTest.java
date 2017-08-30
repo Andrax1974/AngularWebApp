@@ -58,6 +58,14 @@ public class PartialsControllerTest
 	}
 	
 	@Test
+	public void TestNotificheContr() throws Exception
+	{
+		 mockMvc.perform(MockMvcRequestBuilders.get("/items/notifiche"))
+		 	.andExpect(MockMvcResultMatchers.status().isOk())
+		 	.andExpect(MockMvcResultMatchers.view().name("partials/notifiche"));
+	}
+	
+	@Test
 	public void TestUtentiContr() throws Exception
 	{
 		 mockMvc.perform(MockMvcRequestBuilders.get("/items/utente"))
